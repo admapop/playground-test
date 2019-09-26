@@ -1,0 +1,13 @@
+.custom-slider {
+    --slider-height-percentage: 50%;
+    .aws-sld__bullets {
+        z-index: 2;
+        bottom: 10px;
+        button {
+            width: 9px;
+            height: 9px;
+        }
+    }
+
+}
+
