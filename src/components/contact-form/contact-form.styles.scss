@@ -1,0 +1,45 @@
+.contact-form-container {
+    background-color: black;
+    height: 25vw;
+    display: flex;
+
+    padding: 2rem 15vw;
+
+    text-align: left;
+
+    .contact-information {
+        color: white;
+        text-align: left;
+        h1 {
+            margin: 0;
+            font-size: 5vw;
+            width: 18vw;
+            line-height: 0.8;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-rows: repeat(2, 15%) 55% 15%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "name lastname"
+        "email email"
+        "message message"
+        "button .";
+
+        justify-items: left;
+
+        .message {
+            grid-area: message;
+        }
+
+        .button {
+            grid-area: button;
+        }
+    }
+}

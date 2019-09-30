@@ -1,0 +1,22 @@
+$margin-normal: 0 0 0 2rem;
+$margin-flipped: 0 2rem 0 0;
+
+.section-button-custom {
+    border: 1px solid white;
+    background: none;
+    color: white;
+    margin: $margin-normal;
+    padding: 1rem;
+    font-size: 0.8vw;
+    &.flipped {
+        margin: $margin-flipped;
+        border: 1px solid black;
+        color: black;
+    }
+    &.contact {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        margin: 0;
+    }
+}

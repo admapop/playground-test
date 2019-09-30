@@ -57,18 +57,6 @@ $padding-flipped: $margin-flipped;
             }
         }
 
-        .section-button-custom {
-            border: 1px solid white;
-            background: none;
-            color: white;
-            margin: $margin-normal;
-            &.flipped {
-                margin: $margin-flipped;
-                border: 1px solid black;
-                color: black;
-            }
-        }
-
         &.flipped {
             background-color: white;
             color: black;

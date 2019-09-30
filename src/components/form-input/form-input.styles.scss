@@ -1,0 +1,23 @@
+.group {
+    &.name {
+        grid-area: name;
+    }
+
+    &.lastname {
+        grid-area: lastname;
+    }
+
+    &.email {
+        grid-area: email;
+    }
+    .form-input {
+        &.half {
+            width: 10vw;
+        }
+
+        &.full {
+            width: 25vw;
+        }
+
+    }
+}

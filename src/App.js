@@ -6,6 +6,7 @@ import CardContainer from './components/card-container/CardContainer';
 import Section from './components/section/Section';
 import TabContainer from './components/tab-container/TabContainer';
 import Tab from './components/tab/Tab';
+import ContactForm from './components/contact-form/ContactForm';
 
 import './App.css';
 
@@ -37,6 +38,9 @@ function App() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.</p>
         </Tab>
       </TabContainer>
+      <ContactForm>
+
+      </ContactForm>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react'
 
 import './section.styles.scss'
 
+import CustomButton from '../custom-button/CustomButton';
 
 const Section = ({ imageLeft, src, title, children, button }) => {
   const test = `${imageLeft ? '' : 'flipped'}`
@@ -13,7 +14,7 @@ const Section = ({ imageLeft, src, title, children, button }) => {
         <div className={`children ${test}`}>
           {children}
         </div>
-        <button className={`section-button-custom ${test}`}>{button}</button>
+        <CustomButton test={test} button={button} />
       </div>
     </div>
   )
