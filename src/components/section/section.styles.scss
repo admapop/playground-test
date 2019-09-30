@@ -4,6 +4,8 @@ $margin-flipped: 0 2rem 0 0;
 $padding-flipped: $margin-flipped;
 
 .section-container {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: flex-end;
     height: 37vw;
@@ -19,6 +21,7 @@ $padding-flipped: $margin-flipped;
         z-index: -1;
         width: 90%;
         object-fit: cover;
+        display: block;
         
         &.flipped {
             left: unset;

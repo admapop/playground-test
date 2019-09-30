@@ -1,0 +1,18 @@
+.tab-container {
+    display: flex;
+    margin: 4rem 10rem;
+
+    .tab {
+        background-color: #cccccc;
+        width: 20%;
+        height: 15%;
+        padding: 2rem 3rem;
+    }
+
+    .tab-content {
+        background-color: white;
+        width: 80%;
+        padding: 3rem 6rem;
+        text-align: left;
+    }
+}
