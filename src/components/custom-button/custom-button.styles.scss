@@ -8,6 +8,7 @@ $margin-flipped: 0 2rem 0 0;
     margin: $margin-normal;
     padding: 1rem;
     font-size: 0.8vw;
+    cursor: pointer;
     &.flipped {
         margin: $margin-flipped;
         border: 1px solid black;
@@ -18,5 +19,7 @@ $margin-flipped: 0 2rem 0 0;
         color: black;
         border: 1px solid black;
         margin: 0;
+        font-weight: 700;
+        width: 15rem;
     }
 }

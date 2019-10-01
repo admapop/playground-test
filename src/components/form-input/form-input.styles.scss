@@ -1,23 +1,52 @@
+@mixin input {
+    border: 1px solid white;
+    background-color: black;
+}
+
 .group {
     &.name {
         grid-area: name;
+        width: 15vw;
     }
 
     &.lastname {
         grid-area: lastname;
+        width: 15vw;
     }
 
     &.email {
         grid-area: email;
+        width: 32vw;
     }
     .form-input {
+        @include input();
         &.half {
-            width: 10vw;
+            width: 100%;
+            height: 100%;
+            padding-left: 1rem;
+            box-sizing: border-box;
         }
 
         &.full {
-            width: 25vw;
+            width: 100%;
+            height: 100%;
+            padding-left: 1rem;
+            box-sizing: border-box;
+        }
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #4d4d4d;
+            opacity: 1; /* Firefox */
         }
 
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #4d4d4d;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #4d4d4d;
+        }
     }
 }

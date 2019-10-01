@@ -38,9 +38,7 @@ function App() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.</p>
         </Tab>
       </TabContainer>
-      <ContactForm>
-
-      </ContactForm>
+      <ContactForm />
     </div>
   );
 }
