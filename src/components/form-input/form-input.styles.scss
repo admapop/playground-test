@@ -3,20 +3,35 @@
     background-color: black;
 }
 
+@mixin error {
+    color: #db2269;
+    font-size: 0.625em;
+    display: relative;
+}
+
 .group {
     &.name {
         grid-area: name;
         width: 15vw;
+        .error {
+            @include error();
+        }
     }
 
     &.lastname {
         grid-area: lastname;
         width: 15vw;
+        .error {
+            @include error();
+        }
     }
 
     &.email {
         grid-area: email;
         width: 32vw;
+        .error {
+            @include error();
+        }
     }
     .form-input {
         @include input();
@@ -25,6 +40,7 @@
             height: 100%;
             padding-left: 1rem;
             box-sizing: border-box;
+            color: white;
         }
 
         &.full {
@@ -32,6 +48,7 @@
             height: 100%;
             padding-left: 1rem;
             box-sizing: border-box;
+            color: white;
         }
         &::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */

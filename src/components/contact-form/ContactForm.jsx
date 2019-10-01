@@ -3,7 +3,19 @@ import React, { Component } from 'react'
 import './contact-form.styles.scss'
 
 import FormInput from '../form-input/FormInput'
-import CustomButton from '../custom-button/CustomButton';
+import CustomButton from '../custom-button/CustomButton'
+
+const validEmailRegEx =
+  RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
+
+const validateForm = (errors) => {
+  let valid = true;
+  Object.values(errors).forEach(
+    // if we have an error string set valid to false
+    (val) => val.length > 0 && (valid = false)
+  );
+  return valid;
+}
 
 export default class ContactForm extends Component {
   constructor(props) {
@@ -13,12 +25,56 @@ export default class ContactForm extends Component {
       name: '',
       lastName: '',
       email: '',
-      message: ''
+      message: '',
+      errors: {
+        name: '',
+        lastName: '',
+        email: '',
+        message: 'Message cannot be blank!'
+      }
     }
   }
 
+  handleChange = (event) => {
+    event.preventDefault()
+    const { name, value } = event.target
+    let errors = this.state.errors
+
+    switch (name) {
+      case 'name':
+        errors.name = value.length < 2 ? 'Name must be at least 2 characters long!' : ''
+        break
+      case 'lastName':
+        errors.lastName = value.length < 2 ? 'Last Name must be at least 2 characters long!' : ''
+        break
+      case 'email':
+        errors.email = validEmailRegEx.test(value) ? '' : 'Email is not valid!'
+        break
+      case 'message':
+        errors.message = value.length > 1000 ? 'Message must be under 1000 characters and not be blank!' : ''
+        errors.message = value.length < 1 ? 'Message cannot be blank!' : ''
+        break
+      default:
+        break
+    }
+
+    this.setState({ errors, [name]: value })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+
+    if (validateForm(this.state.errors)) {
+      console.info('Valid!')
+    } else {
+      console.error('Invalid!')
+    }
+
+    //Code will depend on implementation
+  }
+
   render() {
-    const { name, lastName, email, message } = this.state
+    const { name, lastName, email, message, errors } = this.state
     return (
       <div className='contact-form-container'>
         <div className='contact-information'>
@@ -39,6 +95,7 @@ export default class ContactForm extends Component {
             onChange={this.handleChange}
             placeholder='name'
             gridArea='name'
+            error={errors}
           />
           <FormInput
             type='text'
@@ -47,6 +104,7 @@ export default class ContactForm extends Component {
             onChange={this.handleChange}
             placeholder='last name'
             gridArea='lastname'
+            error={errors}
           />
           <FormInput
             type='email'
@@ -56,8 +114,11 @@ export default class ContactForm extends Component {
             placeholder='email'
             full
             gridArea='email'
+            error={errors}
+            required
           />
           <textarea className='message' name='message' value={message} onChange={this.handleChange} placeholder='message' />
+          {errors.message.length >0 && <span className='error'>{errors.message}</span> }
           <div className='button'>
             <CustomButton test='contact' button='SEND >' />
           </div>
