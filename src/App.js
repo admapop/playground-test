@@ -30,7 +30,7 @@ function App() {
         <p>Consectetur adipiscing elit.</p>
         <p>Nulla condimentum tortor sem.</p>
       </Section>
-      <TabContainer>
+      {/* <TabContainer>
         <Tab>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.
@@ -39,7 +39,7 @@ function App() {
         <Tab>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.</p>
         </Tab>
-      </TabContainer>
+      </TabContainer> */}
       <ContactForm />
       <Footer />
       <Cookie />
