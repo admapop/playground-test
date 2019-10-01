@@ -1,0 +1,35 @@
+.footer-container {
+    height: 20vw;
+    background-color: black;
+
+    .title {
+        color: white;
+        padding-top: 5rem;
+        h1 {
+            margin: 0;
+        }
+        h3 {
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+
+    .link-container {
+        margin-top: 5rem;
+        .link {
+            color: #bcbcbc;
+            text-decoration: none;
+            font-size: 1vw;
+            padding: 0 4rem;
+        }
+    }
+
+    .logo-container {
+        margin-top: 5rem;
+        .logo {
+            width: 2rem;
+            fill: #4d4d4d;
+            padding: 0 2rem;
+        }
+    }
+}

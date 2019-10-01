@@ -7,6 +7,7 @@ import Section from './components/section/Section';
 import TabContainer from './components/tab-container/TabContainer';
 import Tab from './components/tab/Tab';
 import ContactForm from './components/contact-form/ContactForm';
+import Footer from './components/footer/Footer';
 
 import './App.css';
 
@@ -39,6 +40,7 @@ function App() {
         </Tab>
       </TabContainer>
       <ContactForm />
+      <Footer />
     </div>
   );
 }
