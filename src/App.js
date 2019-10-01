@@ -8,6 +8,7 @@ import TabContainer from './components/tab-container/TabContainer';
 import Tab from './components/tab/Tab';
 import ContactForm from './components/contact-form/ContactForm';
 import Footer from './components/footer/Footer';
+import Cookie from './components/cookie-policy/Cookie';
 
 import './App.css';
 
@@ -41,6 +42,7 @@ function App() {
       </TabContainer>
       <ContactForm />
       <Footer />
+      <Cookie />
     </div>
   );
 }

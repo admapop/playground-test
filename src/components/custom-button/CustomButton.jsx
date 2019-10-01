@@ -2,9 +2,9 @@ import React from 'react'
 
 import './custom-button.styles.scss'
 
-const CustomButton = ({test, button}) => {
+const CustomButton = ({test, button, onClick}) => {
   return (
-    <button className={`section-button-custom ${test}`}>{button}</button>
+    <button className={`section-button-custom ${test}`} onClick={onClick}>{button}</button>
   )
 }
 

@@ -1,0 +1,9 @@
+.cookie-bar {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0;
+    &.hidden {
+        display: none;
+    }
+}

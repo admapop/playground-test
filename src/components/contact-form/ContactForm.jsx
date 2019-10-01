@@ -66,6 +66,7 @@ export default class ContactForm extends Component {
 
     if (validateForm(this.state.errors)) {
       console.info('Valid!')
+      alert('success!')
     } else {
       console.error('Invalid!')
     }
@@ -87,7 +88,7 @@ export default class ContactForm extends Component {
             <li>T +39 0240706003</li>
           </ul>
         </div>
-        <form className='contact-form' onSubmit={this.handleSubmit}>
+        <form className='contact-form' method='post'>
           <FormInput
             type='text'
             name='name'
@@ -118,9 +119,9 @@ export default class ContactForm extends Component {
             required
           />
           <textarea className='message' name='message' value={message} onChange={this.handleChange} placeholder='message' />
-          {errors.message.length >0 && <span className='error'>{errors.message}</span> }
+          {errors.message.length > 0 && <span className='error'>{errors.message}</span>}
           <div className='button'>
-            <CustomButton test='contact' button='SEND >' />
+            <CustomButton test='contact' button='SEND >' onClick={this.handleSubmit} />
           </div>
         </form>
       </div>
