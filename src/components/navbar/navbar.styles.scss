@@ -31,6 +31,10 @@ $link-colour: rgb(239,238,234);
         // .link-active {
         // }
     }
+
+    &.scroll {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
 
 @media only screen and (max-width: 768px) {
