@@ -19,6 +19,7 @@ $link-colour: rgb(239,238,234);
         display: flex;
         justify-content: flex-end;
         .link {
+            font-family: "Gotham Book";
             margin: 0 4rem;
             text-decoration: none;
             color: $link-colour;

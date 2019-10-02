@@ -21,9 +21,9 @@ const Footer = () => {
         <NavLink exact to='/contact-us' className='link' activeClassName='link-active'>contact us</NavLink>
       </ul>
       <div className='logo-container'>
-        <Facebook className='logo'/>
-        <LinkedIn className='logo'/>
-        <Instagram className='logo'/>
+        <a href="https://www.facebook.com/playground.digital.agency" target='_blank' rel="noopener noreferrer"><Facebook className='logo'/></a>
+        <a href="https://www.linkedin.com/company/playground-digital-agency" target='_blank' rel="noopener noreferrer"><LinkedIn className='logo'/></a>
+        <a href="https://www.instagram.com/playground_agency/?hl=it" target='_blank' rel="noopener noreferrer"><Instagram className='logo'/></a>
       </div>
     </footer>
   )

@@ -1,6 +1,6 @@
-$margin-normal: 0 0 0 2rem;
+$margin-normal: 0 0 0 6rem;
 $padding-normal: $margin-normal;
-$margin-flipped: 0 2rem 0 0;
+$margin-flipped: 0 6rem 0 0;
 $padding-flipped: $margin-flipped;
 
 .section-container {
@@ -39,16 +39,18 @@ $padding-flipped: $margin-flipped;
         justify-content: center;
 
         .section-title {
+            font-family: "Gotham Bold";
             font-size: 5vw;
             width: 7rem;
             line-height: 0.8;
             padding: $padding-normal;
             &.flipped {
-                padding: 0 4rem 0 0;
+                padding: 0 6rem 0 0;
             }
         }
 
         .children {
+            font-family: "Gotham Book";
             padding: $padding-normal;
             text-align: left;
             &.flipped {
