@@ -83,14 +83,18 @@ $padding-flipped: $margin-flipped;
         .smaller-section {
             width: 100%;
             align-items: center;
+            background-color: unset;
+            color: black;
 
             &.flipped {
                 align-items: center;
+                background-color: unset;
             }
 
             .section-title {
                 width: unset;
                 padding: 0;
+                font-size: 10vw;
                 &.flipped {
                     padding: 0;
                 }
