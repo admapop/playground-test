@@ -113,13 +113,12 @@ export default class ContactForm extends Component {
             value={email}
             onChange={this.handleChange}
             placeholder='email'
-            full
             gridArea='email'
             error={errors}
             required
           />
           <textarea className='message' name='message' value={message} onChange={this.handleChange} placeholder='message' />
-          {errors.message.length > 0 && <span className='error'>{errors.message}</span>}
+          {errors.message.length > 0 && <span className='error2'>{errors.message}</span>}
           <div className='button'>
             <CustomButton test='contact' button='SEND >' onClick={this.handleSubmit} />
           </div>

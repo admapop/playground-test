@@ -33,3 +33,23 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        height: unset;
+
+        .link-container {
+            padding: 0;
+            .link {
+                font-size: 4vw;
+            }
+        }
+
+        .logo-container {
+            .logo {
+                width: 6vw;
+                padding: 1rem 2vw;
+            }
+        }
+    }
+}

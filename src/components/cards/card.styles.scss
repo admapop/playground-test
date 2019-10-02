@@ -27,3 +27,25 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 60vw;
+        margin: 0;
+        margin-bottom: 2rem;
+        &:first-child {
+            margin-top: 3rem;
+        }
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .card {
+        .card-button {
+            height: 10.5vmin;
+        }
+    }
+}

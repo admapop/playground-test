@@ -38,7 +38,7 @@ $padding-flipped: $margin-flipped;
         align-items: flex-start;
         justify-content: center;
 
-        h1 {
+        .section-title {
             font-size: 5vw;
             width: 7rem;
             line-height: 0.8;
@@ -65,4 +65,45 @@ $padding-flipped: $margin-flipped;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .section-container {
+        height: unset;
+        flex-direction: column;
+        justify-content: center;
 
+        &.flipped {
+            flex-direction: column;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+        }
+
+        .smaller-section {
+            width: 100%;
+            align-items: center;
+
+            &.flipped {
+                align-items: center;
+            }
+
+            .section-title {
+                width: unset;
+                padding: 0;
+                &.flipped {
+                    padding: 0;
+                }
+            }
+
+            .children {
+                padding: 0;
+                text-align: center;
+                &.flipped {
+                    padding: 0;
+                    text-align: center;    
+                }
+            }
+        }
+    }
+}

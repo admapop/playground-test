@@ -35,21 +35,11 @@
     }
     .form-input {
         @include input();
-        &.half {
             width: 100%;
             height: 100%;
             padding-left: 1rem;
             box-sizing: border-box;
             color: white;
-        }
-
-        &.full {
-            width: 100%;
-            height: 100%;
-            padding-left: 1rem;
-            box-sizing: border-box;
-            color: white;
-        }
         &::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: #4d4d4d;
@@ -64,6 +54,20 @@
         &::-ms-input-placeholder {
             /* Microsoft Edge */
             color: #4d4d4d;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .group {
+        &.name {
+            width: unset;
+        }
+        &.lastname {
+            width: unset;
+        }
+        &.email {
+            width: unset;
         }
     }
 }
