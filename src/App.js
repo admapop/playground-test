@@ -18,15 +18,15 @@ function App() {
       <Navbar />
       <Slider />
       <CardContainer />
-      <Section imageLeft src={require('./assets/banners/banner-we-are.jpg')} title='we are.' button='THE PLAYERS >'>
+      <Section imageLeft src={require('./assets/banners/banner-we-are.jpg')} title='we are.' button='THE PLAYERS >' id='we-are'>
         <p>Consectetur adipiscing elit.</p>
         <p>Nulla condimentum tortor sem.</p>
       </Section>
-      <Section src={require('./assets/banners/banner-we-do.jpg')} title='we do.' button='THE PROJECTS >'>
+      <Section src={require('./assets/banners/banner-we-do.jpg')} title='we do.' button='THE PROJECTS >' id='we-do'>
         <p>Consectetur adipiscing elit.</p>
         <p>Nulla condimentum tortor sem.</p>
       </Section>
-      <Section imageLeft src={require('./assets/banners/banner-carrers.jpg')} title='careers.' button='THE POSITIONS >'>
+      <Section imageLeft src={require('./assets/banners/banner-carrers.jpg')} title='careers.' button='THE POSITIONS >' id='careers'>
         <p>Consectetur adipiscing elit.</p>
         <p>Nulla condimentum tortor sem.</p>
       </Section>
@@ -40,7 +40,7 @@ function App() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis praesentium minus nulla voluptatem nostrum dolor, ea suscipit non numquam quaerat culpa cupiditate doloribus amet sunt corporis distinctio a eius quia.</p>
         </Tab>
       </TabContainer> */}
-      <ContactForm />
+      <ContactForm id='contact-us' />
       <Footer />
       <Cookie />
     </div>

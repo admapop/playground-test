@@ -54,10 +54,14 @@ const Navbar = () => {
     <nav className={`navbar ${opacityOnScroll ? 'scroll' : '' }`}>
       <img src={require('../../assets/logos/logo-playground-white.png')} alt=""/>
         <ul className='link-container'>
-          <NavLink exact to='/we-are' className='link' activeClassName='link-active'>we are</NavLink>
+          {/* <NavLink to='#we-are' className='link' activeClassName='link-active'>we are</NavLink>
           <NavLink exact to='/we-do' className='link' activeClassName='link-active'>we do</NavLink>
           <NavLink exact to='/careers' className='link' activeClassName='link-active'>careers</NavLink>
-          <NavLink exact to='/contact-us' className='link' activeClassName='link-active'>contact us</NavLink>
+          <NavLink exact to='/contact-us' className='link' activeClassName='link-active'>contact us</NavLink> */}
+          <a href="#we-are" className='link'>we are</a>
+          <a href="#we-do" className='link'>we do</a>
+          <a href="#careers" className='link'>careers</a>
+          <a href="#contact-us" className='link'>contact us</a>
         </ul>
     </nav>
   )

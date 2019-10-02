@@ -76,8 +76,9 @@ export default class ContactForm extends Component {
 
   render() {
     const { name, lastName, email, message, errors } = this.state
+    const { id } = this.props
     return (
-      <div className='contact-form-container'>
+      <div className='contact-form-container' id={id}>
         <div className='contact-information'>
           <h1>contact us.</h1>
           <ul>
